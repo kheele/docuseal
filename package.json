@@ -44,7 +44,9 @@
   },
   "version": "0.1.0",
   "scripts": {
-    "eslint": "./node_modules/eslint/bin/eslint.js \"app/javascript/**/*.{js,vue}\" --fix"
+    "eslint": "./node_modules/eslint/bin/eslint.js \"app/javascript/**/*.{js,vue}\" --fix",
+    "docker:buildANDpush:docusign": "docker build . -t rhespo/docusign && docker push rhespo/docusign",
+    "install:mod": "npm install --global yarn"
   },
   "babel": {
     "presets": [
